@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.school.homework1.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="304.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.school.homework1.HelloController">
+   <children>
+      <Label fx:id="header" layoutX="88.0" layoutY="14.0" text="BMI Kalkulačka">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="field_weight" layoutX="75.0" layoutY="80.0" promptText="Hmotnosť (kg)" />
+      <TextField fx:id="field_height" layoutX="75.0" layoutY="140.0" promptText="Výška (cm)" />
+      <Button fx:id="button_calc" layoutX="116.0" layoutY="251.0" mnemonicParsing="false" onAction="#button_click" text="Vypočítať" />
+      <Label fx:id="bmi_result" alignment="CENTER" layoutX="75.0" layoutY="315.0" prefHeight="20.0" prefWidth="149.0" text="BMI" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="result_string" alignment="CENTER" layoutX="75.0" layoutY="344.0" prefHeight="20.0" prefWidth="149.0" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
