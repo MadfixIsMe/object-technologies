@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.Canvas?>
+
+<Pane xmlns:fx="http://javafx.com/fxml" fx:controller="com.school.shapes.HelloController"
+      prefWidth="600" prefHeight="450">
+
+   <HBox spacing="5" layoutX="5" layoutY="10">
+      <Button text="Obdĺžnik" onAction="#addRectangle"/>
+      <Button text="Kruh" onAction="#addCircle"/>
+      <Button text="Štvorec" onAction="#addSquare"/>
+      <Button text="Kruhy modro" onAction="#makeCirclesBlue"/>
+      <Button text="Nadol o 30" onAction="#moveAllDown"/>
+   </HBox>
+
+   <Canvas fx:id="canvas" layoutX="0" layoutY="50" width="600" height="400"/>
+</Pane>
