@@ -1,4 +1,4 @@
-package com.school.ball;
+    package com.school.ball;
 
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;

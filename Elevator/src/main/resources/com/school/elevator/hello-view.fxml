@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.Canvas?>
+
+<Pane fx:id="root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.school.elevator.HelloController"
+      prefWidth="360" prefHeight="470">
+
+    <Label fx:id="floorLabel" layoutX="10" layoutY="10" text="Aktuálne poschodie: 0"/>
+    <Label layoutX="200" layoutY="10" text="Stlač 0 - 8"/>
+</Pane>
